@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Заголовок (пример)",
+    "subtitle": "Подзаголовок (пример)",
+    "ctaText": "Оставить заявку",
+    "ctaLink": "/contact.html",
+    "image": "/assets/placeholder-hero.jpg",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  "company": {
+    "phone": "+7 (999) 123-45-67",
+    "email": "hello@example.com"
+  }
+}

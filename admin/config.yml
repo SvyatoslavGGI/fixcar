@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Uncomment for local development:
+# local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Страницы"
+    files:
+      - file: "content/page.json"
+        label: "Текущая страница (пример)"
+        name: "page"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Подзаголовок", name: "subtitle", widget: "text" }
+              - { label: "Текст кнопки", name: "ctaText", widget: "string" }
+              - { label: "Ссылка кнопки", name: "ctaLink", widget: "string" }
+              - { label: "Картинка", name: "image", widget: "image" }
+              - { label: "Видео (embed URL)", name: "videoUrl", widget: "string", required: false }
+          - label: "Контакты"
+            name: "company"
+            widget: "object"
+            fields:
+              - { label: "Телефон", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
