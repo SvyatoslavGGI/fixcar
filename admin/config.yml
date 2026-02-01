@@ -2,9 +2,6 @@ backend:
   name: git-gateway
   branch: main
 
-# Uncomment for local development:
-# local_backend: true
-
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
@@ -15,32 +12,75 @@ collections:
       - file: "content/home.json"
         label: "Главная"
         name: "home"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Заголовок (часть 1)", name: "titleBefore", widget: "string" }
+              - { label: "Заголовок (акцент)", name: "titleAccent", widget: "string" }
+              - { label: "Подзаголовок", name: "subtitle", widget: "text" }
+
+          - label: "Контакты"
+            name: "company"
+            widget: "object"
+            fields:
+              - { label: "Телефон", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
 
       - file: "content/about.json"
         label: "О компании"
         name: "about"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Заголовок (часть 1)", name: "titleBefore", widget: "string" }
+              - { label: "Заголовок (акцент)", name: "titleAccent", widget: "string" }
+              - { label: "Подзаголовок", name: "subtitle", widget: "text" }
+
+          - label: "Контакты"
+            name: "company"
+            widget: "object"
+            fields:
+              - { label: "Телефон", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
 
       - file: "content/services.json"
         label: "Услуги"
         name: "services"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Заголовок (часть 1)", name: "titleBefore", widget: "string" }
+              - { label: "Заголовок (акцент)", name: "titleAccent", widget: "string" }
+              - { label: "Подзаголовок", name: "subtitle", widget: "text" }
+
+          - label: "Контакты"
+            name: "company"
+            widget: "object"
+            fields:
+              - { label: "Телефон", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
 
       - file: "content/contacts.json"
         label: "Контакты"
         name: "contacts"
-
-    fields:
-      - label: "Hero"
-        name: "hero"
-        widget: "object"
         fields:
-            - { label: "Заголовок (часть 1)", name: "titleBefore", widget: "string" }
-            - { label: "Заголовок (акцент)", name: "titleAccent", widget: "string" }
-            - { label: "Подзаголовок", name: "subtitle", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Заголовок (часть 1)", name: "titleBefore", widget: "string" }
+              - { label: "Заголовок (акцент)", name: "titleAccent", widget: "string" }
+              - { label: "Подзаголовок", name: "subtitle", widget: "text" }
 
-      - label: "Контакты"
-        name: "company"
-        widget: "object"
-        fields:
-          - { label: "Телефон", name: "phone", widget: "string", required: false }
-          - { label: "Email", name: "email", widget: "string", required: false }
-
+          - label: "Контакты"
+            name: "company"
+            widget: "object"
+            fields:
+              - { label: "Телефон", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
