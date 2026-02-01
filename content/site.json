@@ -1,0 +1,18 @@
+{
+  "header": {
+    "logoText": "FixCar",
+    "nav": [
+      { "label": "Продукты", "href": "#products" },
+      { "label": "Решения", "href": "#solutions" },
+      { "label": "О компании", "href": "/about.html" }
+    ],
+    "cta": { "label": "Связаться", "href": "/contacts.html" }
+  },
+  "footer": {
+    "copyright": "© 2026 FixCar. Все права защищены.",
+    "links": [
+      { "label": "Политика", "href": "/privacy.html" },
+      { "label": "Контакты", "href": "/contacts.html" }
+    ]
+  }
+}

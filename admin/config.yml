@@ -6,6 +6,46 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
+  - name: "site"
+    label: "Сквозное"
+    files:
+      - file: "content/site.json"
+        label: "Шапка и футер"
+        name: "site"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Текст логотипа", name: "logoText", widget: "string" }
+
+              - label: "Меню"
+                name: "nav"
+                widget: "list"
+                fields:
+                  - { label: "Текст", name: "label", widget: "string" }
+                  - { label: "Ссылка", name: "href", widget: "string" }
+
+              - label: "Кнопка справа"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Текст", name: "label", widget: "string", required: false }
+                  - { label: "Ссылка", name: "href", widget: "string", required: false }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Копирайт", name: "copyright", widget: "string" }
+
+              - label: "Ссылки футера"
+                name: "links"
+                widget: "list"
+                fields:
+                  - { label: "Текст", name: "label", widget: "string" }
+                  - { label: "Ссылка", name: "href", widget: "string" }
+                  
   - name: "pages"
     label: "Страницы"
     files:
@@ -20,6 +60,10 @@ collections:
               - { label: "Заголовок (часть 1)", name: "titleBefore", widget: "string" }
               - { label: "Заголовок (акцент)", name: "titleAccent", widget: "string" }
               - { label: "Подзаголовок", name: "subtitle", widget: "text" }
+              - { label: "Фон: постер (URL или картинка)", name: "bgPoster", widget: "string" }
+              - { label: "Фон: mp4 (URL)", name: "bgMp4", widget: "string" }
+              - { label: "Фон: webm (URL)", name: "bgWebm", widget: "string", required: false }
+              - { label: "Фон: video urls (mp4,webm одной строкой)", name: "bgVideoUrls", widget: "string" }
 
           - label: "Контакты"
             name: "company"
