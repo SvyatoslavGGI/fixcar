@@ -4,7 +4,7 @@
   // - override by adding <meta name="cms-content" content="/content/home.json">
   function getContentUrl() {
     var meta = document.querySelector('meta[name="cms-content"]');
-    return meta && meta.content ? meta.content : "/content/page.json";
+    return meta && meta.content ? meta.content : "/content/home.json";
   }
 
   // Apply values to elements that have data-cms="key".
