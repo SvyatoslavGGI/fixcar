@@ -1,4 +1,25 @@
 {
+  "header": {
+    "logoSrc": "logo.png",
+    "logoAlt": "FixCar logo",
+    "logoHref": "/",
+
+    "menu1Text": "Решения test",
+    "menu1Href": "/solutions",
+
+    "menu2Text": "Технологии",
+    "menu2Href": "/",
+
+    "menu3Text": "О компании",
+    "menu3Href": "/about",
+
+    "searchAction": "/search",
+    "searchPlaceholder": "Поиск",
+    "searchExpandedPlaceholder": "Поиск по cccis.com",
+
+    "ctaText": "Связаться с нами",
+    "ctaHref": "/contact"
+  },
   "hero": {
     "titleBefore": "Мы создаём мир, где жизнь",
     "titleAccent": "просто работает.",

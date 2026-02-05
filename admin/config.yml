@@ -17,21 +17,23 @@ collections:
             name: "header"
             widget: "object"
             fields:
-              - { label: "Текст логотипа", name: "logoText", widget: "string" }
+              - { label: "Логотип (картинка)", name: "logoSrc", widget: "image", required: true }
+              - { label: "Alt логотипа", name: "logoAlt", widget: "string", default: "FixCar logo" }
+              - { label: "Ссылка логотипа", name: "logoHref", widget: "string", default: "/" }
 
-              - label: "Меню"
-                name: "nav"
-                widget: "list"
-                fields:
-                  - { label: "Текст", name: "label", widget: "string" }
-                  - { label: "Ссылка", name: "href", widget: "string" }
+              - { label: "Меню 1 — текст", name: "menu1Text", widget: "string", required: true }
+              - { label: "Меню 1 — ссылка", name: "menu1Href", widget: "string", default: "/" }
 
-              - label: "Кнопка справа"
-                name: "cta"
-                widget: "object"
-                fields:
-                  - { label: "Текст", name: "label", widget: "string", required: false }
-                  - { label: "Ссылка", name: "href", widget: "string", required: false }
+              - { label: "Меню 2 — текст", name: "menu2Text", widget: "string", required: true }
+              - { label: "Меню 2 — ссылка", name: "menu2Href", widget: "string", default: "/" }
+
+              - { label: "Меню 3 — текст", name: "menu3Text", widget: "string", required: true }
+              - { label: "Меню 3 — ссылка", name: "menu3Href", widget: "string", default: "/about" }
+
+              - { label: "Кнопка — текст", name: "ctaText", widget: "string", default: "Связаться с нами" }
+              - { label: "Кнопка — ссылка", name: "ctaHref", widget: "string", default: "/contact" }
+
+
 
           - label: "Footer"
             name: "footer"
