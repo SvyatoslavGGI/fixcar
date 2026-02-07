@@ -26,7 +26,7 @@
     "subtitle": "Благодаря целенаправленным инновациям и силе наших связей технологии помогают людям двигаться дальше, когда это действительно важно.",
     "bgPoster": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-poster-00001.jpg",
     "bgMp4": "assets/bg.mp4",
-    "bgWebm": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-transcode.webm",
+    "bgWebm": "assets/bg.webm",
     "bgVideoUrls": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-transcode.mp4,https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-transcode.webm"
   },
   "vision": {
@@ -40,6 +40,112 @@
     "videoSrc": "https://play.vidyard.com/DPFwwkHtbAESx8NrL1HM6s?disable_popouts=1&type=inline&v=4.3.19",
     "videoPosterSrc": "https://play.vidyard.com/DPFwwkHtbAESx8NrL1HM6s.jpg"
   },
+  "platform": {
+    "enabled": true,
+    "lottieSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/67d6165995de9f50156dc08a_New%20Website%20BSO%20Animation%2003.lottie",
+    "title": "Ваша платформа интеллектуальных сервисов test",
+    "text": "Каждое ДТП запускает цепочку сложных 23 процессов, которые нужно аккуратно скоординировать, чтобы люди как можно быстрее и без лишних усилий вернулись к обычной жизни. FixCar — ядро технологий. Платформа объединяет данные и ИИ по всей нашей экосистеме и помогает страховщикам и сервисам выстраивать рабочие процессы, такие же динамичные и уникальные, как миллионы заявлений и ремонтов, которые они ведут каждый год. FixCar опирается на нашу SaaS-экспертизу и ответственное управление данными, чтобы воплощать интеллектуальные сервисы в реальность — более умные, быстрые и бесшовные. Сервисы, которые просто работают для всех.",
+    "ctaText": "Платформа FixCar 23",
+    "ctaHref": "/our-technology/ix-cloud-platform"
+  },
+  "industries": {
+    "enabled": true,
+
+    "topTitle": "FixCar: платформа, созданная для объединения участников",
+    "topText": "Чтобы создавать интеллектуальные сервисы, FixCar сочетает ИИ, данные и событийную архитектуру, передавая критически важные инсайты нужным людям в нужный момент. Одно подключение к FixCar без лишних усилий связывает вас с 35 000+ компаниями, которые помогают восстановить нормальную жизнь клиентов.",
+
+    "cardCaption": "Отрасль",
+
+    "card1LottieSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/6799528cf80d7a7970e4a983_Phone%20Fill%20Animation_RD3_V1.lottie",
+    "card1Title": "Страховые компании тест",
+    "card1Text": "Наши решения помогают страховщикам раньше принимать более уверенные решения и создавать сценарии урегулирования, которые лучше связаны для сотрудников и более заботливы для клиентов.",
+    "card1CtaText": "Узнать больше",
+    "card1CtaHref": "/insurance-carriers",
+
+    "card2LottieSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/678d854cecca737d908f98c8_Vehicle%20%26%20Car%20Key%20Animation_RD2_V1.lottie",
+    "card2Title": "Кузовные сервисы 23",
+    "card2Text": "Наши решения помогают сервисам эффективнее управлять кузовным бизнесом и принимать решения по ремонту проще и быстрее.",
+    "card2CtaText": "Узнать больше",
+    "card2CtaHref": "/collision-repairers",
+
+    "card3LottieSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/679952759e5bbde3d22b7a6d_Auto%20Repairer%20Bubble_RD3_V1.lottie",
+    "card3Title": "Автопроизводители 43",
+    "card3Text": "Наши решения помогают автопроизводителям улучшать клиентский опыт ремонта и подключаться к крупнейшей в отрасли сети сервисов.",
+    "card3CtaText": "Узнать больше тест",
+    "card3CtaHref": "/oem",
+
+    "card4LottieSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/686d8b5cfd73757ab46e657a_82b9f1f2aecd408ba41fcbc357b7cdd7_Parts%20Suppliers%20Animation.lottie",
+    "card4Title": "Поставщики запчастей 23",
+    "card4Text": "Наши решения помогают поставщикам продавать 12 больше запчастей, цифровым образом связывая их с десятками тысяч кузовных сервисов, которые ищут и заказывают детали прямо при составлении сметы.",
+    "card4CtaText": "Узнать больше",
+    "card4CtaHref": "/parts-suppliers"
+  },
+  "stats": {
+  "enabled": true,
+
+  "item1Value": "300+",
+  "item1Label": "Автостраховщики",
+
+  "item2Value": "30,500+",
+  "item2Label": "Кузовные сервисы",
+
+  "item3Value": "5,000+",
+  "item3Label": "Поставщики запчастей",
+
+  "item4Value": "12",
+  "item4Label": "из топ-15 OEM",
+
+  "item5Value": "700+",
+  "item5Label": "медицинских специалистов",
+
+  "item6Value": "18M+",
+  "item6Label": "заявлений обрабатывается в год"
+  },
+
+  "era": {
+    "enabled": true,
+
+    "title": "Технологии, которые делают возможными интеллектуальные сервисы",
+    "text": "Уникальное сочетание данных, ИИ и сетевых связей FixCar делает интеллектуальные сервисы возможными.",
+    "strongText": "Узнайте больше о наших ключевых технологиях.",
+
+    "cardButtonText": "Узнать больше",
+
+    "card1Href": "/our-technology/ix-cloud-platform",
+    "card1ImgSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/6787e9cfc20b3556026ee61d_cloud.webp",
+    "card1ImgAlt": "Голограмма облака",
+    "card1Title": "FixCar",
+    "card1Text": "Принимайте решения быстрее и точнее с решениями на базе ИИ — чтобы урегулирование и ремонт «просто работали».",
+
+    "card2Href": "/our-technology/ai",
+    "card2ImgSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/6787e990bad049acd99b2116_data-and-ai.webp",
+    "card2ImgAlt": "Голограмма автомобиля, проецируемая с телефона",
+    "card2Title": "Данные + ИИ",
+    "card2Text": "Используйте более $1 трлн исторических данных FixCar для инсайтов и более простого принятия решений.",
+
+    "card3Href": "/our-technology/ecosystem",
+    "card3ImgSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/67e20ed07d8e2bc320dae21e_ecosystem.webp",
+    "card3ImgAlt": "Автомобили на дороге с цифровыми маркерами",
+    "card3Title": "Экосистема",
+    "card3Text": "Подключайтесь к нашей сети из 35 000+ компаний, чтобы ускорять инновации."
+  },
+  "marquee": {
+    "enabled": true,
+    "title": "Создаём ценность вместе с нашими надёжными партнёрами",
+    "text": "Наша партнёрская сеть двигает инновации благодаря бесшовным интеграциям, безопасному обмену данными и отраслевой экспертизе. Вместе мы формируем будущее автоурегулирования и ремонта. Вместе мы делаем так, чтобы всё просто работало.",
+    "items": [
+      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68c9635004689570e259ca43_Partner%20tile%20updates.png" },
+      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68f93ec953a1a111887909a5_5Aces%20Solutions.png" },
+      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68f932c9b25f49f69214d3e1_Adassafe%20logo.jpg" },
+      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/678d7032cba5a51ee59bab89_agero.png" },
+      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68b8635697025169fbb1d734_9.2.25%20airpro.jpeg" }
+    ]
+  },
+
+
+
+
+
 
 
   "company": {

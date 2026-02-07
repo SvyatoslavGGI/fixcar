@@ -81,13 +81,122 @@ collections:
               - { label: "Видео: alt (постер img)", name: "videoAlt", widget: "string", required: false }
               - { label: "Видео: src (iframe)", name: "videoSrc", widget: "string" }
               - { label: "Видео: постер (img src)", name: "videoPosterSrc", widget: "string" }
-
-          - label: "Контакты"
-            name: "company"
+          - label: "Блок: Платформа"
+            name: "platform"
             widget: "object"
             fields:
-              - { label: "Телефон", name: "phone", widget: "string", required: false }
-              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Показывать блок", name: "enabled", widget: "boolean", default: true }
+              - { label: "Lottie (data-src)", name: "lottieSrc", widget: "string" }
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Текст", name: "text", widget: "text" }
+              - { label: "Кнопка — текст", name: "ctaText", widget: "string" }
+              - { label: "Кнопка — ссылка", name: "ctaHref", widget: "string" }
+          - label: "Блок: Отрасли (карточки)"
+            name: "industries"
+            widget: "object"
+            fields:
+              - { label: "Показывать блок", name: "enabled", widget: "boolean", default: true }
+
+              - { label: "Верхний заголовок", name: "topTitle", widget: "string" }
+              - { label: "Верхний текст", name: "topText", widget: "text" }
+
+              - { label: "Подпись карточек (например «Отрасль»)", name: "cardCaption", widget: "string", default: "Отрасль" }
+
+              - { label: "Карточка 1 — Lottie src", name: "card1LottieSrc", widget: "string" }
+              - { label: "Карточка 1 — Заголовок", name: "card1Title", widget: "string" }
+              - { label: "Карточка 1 — Текст", name: "card1Text", widget: "text" }
+              - { label: "Карточка 1 — Кнопка текст", name: "card1CtaText", widget: "string", default: "Узнать больше" }
+              - { label: "Карточка 1 — Кнопка ссылка", name: "card1CtaHref", widget: "string" }
+
+              - { label: "Карточка 2 — Lottie src", name: "card2LottieSrc", widget: "string" }
+              - { label: "Карточка 2 — Заголовок", name: "card2Title", widget: "string" }
+              - { label: "Карточка 2 — Текст", name: "card2Text", widget: "text" }
+              - { label: "Карточка 2 — Кнопка текст", name: "card2CtaText", widget: "string", default: "Узнать больше" }
+              - { label: "Карточка 2 — Кнопка ссылка", name: "card2CtaHref", widget: "string" }
+
+              - { label: "Карточка 3 — Lottie src", name: "card3LottieSrc", widget: "string" }
+              - { label: "Карточка 3 — Заголовок", name: "card3Title", widget: "string" }
+              - { label: "Карточка 3 — Текст", name: "card3Text", widget: "text" }
+              - { label: "Карточка 3 — Кнопка текст", name: "card3CtaText", widget: "string", default: "Узнать больше" }
+              - { label: "Карточка 3 — Кнопка ссылка", name: "card3CtaHref", widget: "string" }
+
+              - { label: "Карточка 4 — Lottie src", name: "card4LottieSrc", widget: "string" }
+              - { label: "Карточка 4 — Заголовок", name: "card4Title", widget: "string" }
+              - { label: "Карточка 4 — Текст", name: "card4Text", widget: "text" }
+              - { label: "Карточка 4 — Кнопка текст", name: "card4CtaText", widget: "string", default: "Узнать больше" }
+              - { label: "Карточка 4 — Кнопка ссылка", name: "card4CtaHref", widget: "string" }
+          - label: "Блок: Статистика"
+            name: "stats"
+            widget: "object"
+            fields:
+              - { label: "Показывать блок", name: "enabled", widget: "boolean", default: true }
+
+              - { label: "Стат 1 — число", name: "item1Value", widget: "string" }
+              - { label: "Стат 1 — подпись", name: "item1Label", widget: "string" }
+
+              - { label: "Стат 2 — число", name: "item2Value", widget: "string" }
+              - { label: "Стат 2 — подпись", name: "item2Label", widget: "string" }
+
+              - { label: "Стат 3 — число", name: "item3Value", widget: "string" }
+              - { label: "Стат 3 — подпись", name: "item3Label", widget: "string" }
+
+              - { label: "Стат 4 — число", name: "item4Value", widget: "string" }
+              - { label: "Стат 4 — подпись", name: "item4Label", widget: "string" }
+
+              - { label: "Стат 5 — число", name: "item5Value", widget: "string" }
+              - { label: "Стат 5 — подпись", name: "item5Label", widget: "string" }
+
+              - { label: "Стат 6 — число", name: "item6Value", widget: "string" }
+              - { label: "Стат 6 — подпись", name: "item6Label", widget: "string" }
+          - label: "Блок: Ключевые технологии (3 карточки)"
+            name: "era"
+            widget: "object"
+            fields:
+              - { label: "Показывать блок", name: "enabled", widget: "boolean", default: true }
+
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Текст", name: "text", widget: "text" }
+              - { label: "Жирный текст", name: "strongText", widget: "string" }
+
+              - { label: "Текст кнопок (в карточках)", name: "cardButtonText", widget: "string", default: "Узнать больше" }
+
+              - { label: "Карточка 1 — ссылка", name: "card1Href", widget: "string" }
+              - { label: "Карточка 1 — картинка", name: "card1ImgSrc", widget: "string" }
+              - { label: "Карточка 1 — alt", name: "card1ImgAlt", widget: "string" }
+              - { label: "Карточка 1 — заголовок", name: "card1Title", widget: "string" }
+              - { label: "Карточка 1 — текст", name: "card1Text", widget: "text" }
+
+              - { label: "Карточка 2 — ссылка", name: "card2Href", widget: "string" }
+              - { label: "Карточка 2 — картинка", name: "card2ImgSrc", widget: "string" }
+              - { label: "Карточка 2 — alt", name: "card2ImgAlt", widget: "string" }
+              - { label: "Карточка 2 — заголовок", name: "card2Title", widget: "string" }
+              - { label: "Карточка 2 — текст", name: "card2Text", widget: "text" }
+
+              - { label: "Карточка 3 — ссылка", name: "card3Href", widget: "string" }
+              - { label: "Карточка 3 — картинка", name: "card3ImgSrc", widget: "string" }
+              - { label: "Карточка 3 — alt", name: "card3ImgAlt", widget: "string" }
+              - { label: "Карточка 3 — заголовок", name: "card3Title", widget: "string" }
+              - { label: "Карточка 3 — текст", name: "card3Text", widget: "text" }
+          - label: "Блок: Партнёры (Marquee)"
+            name: "marquee"
+            widget: "object"
+            fields:
+              - { label: "Показывать блок", name: "enabled", widget: "boolean", default: true }
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Текст", name: "text", widget: "text" }
+
+              - label: "Логотипы партнёров"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Картинка (URL)", name: "src", widget: "string" }
+
+                    - label: "Контакты"
+                      name: "company"
+                      widget: "object"
+                      fields:
+                        - { label: "Телефон", name: "phone", widget: "string", required: false }
+                        - { label: "Email", name: "email", widget: "string", required: false }
 
       - file: "content/about.json"
         label: "О компании"
