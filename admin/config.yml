@@ -66,6 +66,21 @@ collections:
               - { label: "Фон: mp4 (URL)", name: "bgMp4", widget: "string" }
               - { label: "Фон: webm (URL)", name: "bgWebm", widget: "string", required: false }
               - { label: "Фон: video urls (mp4,webm одной строкой)", name: "bgVideoUrls", widget: "string" }
+          - label: "Vision (видео-блок)"
+            name: "vision"
+            widget: "object"
+            fields:
+              - { label: "Показывать блок", name: "enabled", widget: "boolean", default: true }
+
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Текст", name: "text", widget: "text" }
+              - { label: "Выделенный текст (жирный)", name: "strongText", widget: "string" }
+
+              - { label: "Видео: ID (Vidyard UUID)", name: "videoId", widget: "string", required: false }
+              - { label: "Видео: title (iframe)", name: "videoTitle", widget: "string", required: false }
+              - { label: "Видео: alt (постер img)", name: "videoAlt", widget: "string", required: false }
+              - { label: "Видео: src (iframe)", name: "videoSrc", widget: "string" }
+              - { label: "Видео: постер (img src)", name: "videoPosterSrc", widget: "string" }
 
           - label: "Контакты"
             name: "company"

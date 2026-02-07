@@ -1,33 +1,91 @@
 (function () {
-  // Which content file to use for this page:
-  // - default: /content/page.json
-  // - override by adding <meta name="cms-content" content="/content/home.json">
   function getContentUrl() {
     var meta = document.querySelector('meta[name="cms-content"]');
     return meta && meta.content ? meta.content : "/content/home.json";
   }
 
-  // Apply values to elements that have data-cms="key".
-  // Supported:
-  // - text elements: sets textContent
-  // - links (<a>): sets href if value looks like a URL/path; sets text if separate key is provided
-  // - images (<img>): sets src
-  // - video/iframe: sets src for <iframe> or <video> (if used)
+  function getByPath(data, key) {
+    return key.split(".").reduce(function (acc, k) {
+      return acc && Object.prototype.hasOwnProperty.call(acc, k) ? acc[k] : undefined;
+    }, data);
+  }
+
+  // Hide/show blocks. IMPORTANT: do nothing if the key is missing (undefined).
+  function applyHide(data) {
+    var nodes = document.querySelectorAll("[data-cms-hide]");
+    nodes.forEach(function (el) {
+      var key = el.getAttribute("data-cms-hide");
+      if (!key) return;
+
+      var value = getByPath(data, key);
+
+      // If key isn't present in JSON -> do not change anything
+      if (value === undefined) return;
+
+      var enabled = (value === true || value === "true" || value === 1 || value === "1");
+
+      if (!enabled) {
+        if (!el.hasAttribute("data-cms-hide-prev-display")) {
+          el.setAttribute("data-cms-hide-prev-display", el.style.display || "");
+        }
+        el.style.display = "none";
+      } else {
+        if (el.hasAttribute("data-cms-hide-prev-display")) {
+          el.style.display = el.getAttribute("data-cms-hide-prev-display") || "";
+        } else {
+          el.style.display = "";
+        }
+      }
+    });
+  }
+
+  function applyAttr(data, cmsAttr, realAttr) {
+    var selector = "[" + cmsAttr + "]";
+    document.querySelectorAll(selector).forEach(function (el) {
+      var key = el.getAttribute(cmsAttr);
+      if (!key) return;
+
+      var value = getByPath(data, key);
+
+      // If key missing -> skip (do not overwrite defaults)
+      if (value === undefined || value === null) return;
+
+      el.setAttribute(realAttr, String(value));
+    });
+  }
+
+  function applyAttributes(data) {
+    applyAttr(data, "data-cms-src", "src");
+    applyAttr(data, "data-cms-href", "href");
+    applyAttr(data, "data-cms-alt", "alt");
+    applyAttr(data, "data-cms-title", "title");
+    applyAttr(data, "data-cms-placeholder", "placeholder");
+    applyAttr(data, "data-cms-action", "action");
+    applyAttr(data, "data-cms-uuid", "uuid");
+  }
+
   function applyContent(data) {
+    // Never let a small bug kill the whole page updates
+    try {
+      applyHide(data);
+      applyAttributes(data);
+    } catch (e) {
+      // keep going to text updates
+    }
+
     var nodes = document.querySelectorAll("[data-cms]");
     nodes.forEach(function (el) {
       var key = el.getAttribute("data-cms");
       if (!key) return;
 
-      // Support nested keys: e.g. hero.title
-      var value = key.split(".").reduce(function (acc, k) {
-        return acc && Object.prototype.hasOwnProperty.call(acc, k) ? acc[k] : undefined;
-      }, data);
-
+      var value = getByPath(data, key);
       if (value === undefined || value === null) return;
 
       var tag = el.tagName.toLowerCase();
 
+      // Keep your original behavior:
+      // data-cms on <a> sets href, on <img> sets src, etc.
+      // (Text should be placed on inner <span>/<div> to avoid this)
       if (tag === "img") {
         el.setAttribute("src", String(value));
         return;
@@ -41,31 +99,25 @@
         return;
       }
       if (tag === "video") {
-        // Optional: value may be a URL
         el.setAttribute("src", String(value));
         return;
       }
 
-      // Default text
       el.textContent = String(value);
     });
 
-    // Repeaters (optional advanced): elements with data-cms-list="key" and a child template [data-cms-item-template]
+    // Repeaters left as-is
     var listNodes = document.querySelectorAll("[data-cms-list]");
     listNodes.forEach(function (listEl) {
       var listKey = listEl.getAttribute("data-cms-list");
       if (!listKey) return;
 
-      var arr = listKey.split(".").reduce(function (acc, k) {
-        return acc && Object.prototype.hasOwnProperty.call(acc, k) ? acc[k] : undefined;
-      }, data);
-
+      var arr = getByPath(data, listKey);
       if (!Array.isArray(arr)) return;
 
       var template = listEl.querySelector("[data-cms-item-template]");
       if (!template) return;
 
-      // Clear existing items except template
       Array.from(listEl.children).forEach(function (child) {
         if (child !== template) listEl.removeChild(child);
       });
@@ -78,9 +130,8 @@
         clone.querySelectorAll("[data-cms-item]").forEach(function (el) {
           var itemKey = el.getAttribute("data-cms-item");
           if (!itemKey) return;
-          var val = itemKey.split(".").reduce(function (acc, k) {
-            return acc && Object.prototype.hasOwnProperty.call(acc, k) ? acc[k] : undefined;
-          }, item);
+
+          var val = getByPath(item, itemKey);
           if (val === undefined || val === null) return;
 
           var tag = el.tagName.toLowerCase();
@@ -92,7 +143,6 @@
         listEl.appendChild(clone);
       });
 
-      // Hide template
       template.style.display = "none";
     });
   }
@@ -103,7 +153,7 @@
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r); })
       .then(applyContent)
       .catch(function () {
-        // Silently ignore if content file not found yet
+        // ignore
       });
   }
 

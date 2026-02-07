@@ -21,14 +21,27 @@
     "ctaHref": "/contact"
   },
   "hero": {
-    "titleBefore": "Мы создаём мир, где жизнь",
-    "titleAccent": "просто работает.",
+    "titleBefore": "Мы создаём мир, где жизнь тест",
+    "titleAccent": "просто работает 12.",
     "subtitle": "Благодаря целенаправленным инновациям и силе наших связей технологии помогают людям двигаться дальше, когда это действительно важно.",
     "bgPoster": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-poster-00001.jpg",
-    "bgMp4": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-transcode.mp4",
+    "bgMp4": "assets/bg.mp4",
     "bgWebm": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-transcode.webm",
     "bgVideoUrls": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-transcode.mp4,https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30%2F678567642ee6c9d4759d8f2e_ccc-compressed-transcode.webm"
   },
+  "vision": {
+    "enabled": false,
+    "title": "Переосмысляем возможности в урегулировании и ремонте test",
+    "text": "Миллионы раз в год происходят ДТП и травмы. Когда случается непредвиденное, FixCar объединяет всю отрасль test — страховщиков, сервисы, автопроизводителей и других участников — чтобы помочь людям быстрее вернуться на дорогу и восстановиться.",
+    "strongText": "Посмотрите видео о том, как FixCar делает так, чтобы процессы в страховой экосистеме P&C «просто работали». test",
+    "videoId": "DPFwwkHtbAESx8NrL1HM6s",
+    "videoTitle": "Видео о FixCar",
+    "videoAlt": "Видео о видении FixCar: «чтобы всё просто работало»",
+    "videoSrc": "https://play.vidyard.com/DPFwwkHtbAESx8NrL1HM6s?disable_popouts=1&type=inline&v=4.3.19",
+    "videoPosterSrc": "https://play.vidyard.com/DPFwwkHtbAESx8NrL1HM6s.jpg"
+  },
+
+
   "company": {
     "phone": "+7 (999) 123-45-67",
     "email": "hello@example.com"
