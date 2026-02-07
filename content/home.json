@@ -149,15 +149,67 @@
     "logo5Src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68b8635697025169fbb1d734_9.2.25%20airpro.jpeg",
     "logo5Alt": "AirPro"
   },
+  "latestSolutions": {
+    "enabled": true,
 
+    "imageSrc": "https://cdn.prod.website-files.com/677e7ecbb3dbbe98615cde30/678d6e84806cbf10198b66fe_bold-future.webp",
+    "imageAlt": "Два человека смотрят на планшет",
 
+    "title": "Посмотреть последние решения",
+    "text": "Наши новые инновации меняют отрасль. Эти решения повышают эффективность и улучшают клиентский опыт, помогая страховщикам, сервисам и OEM работать умнее и оставаться на шаг впереди.",
 
+    "badge": "Самая свежая инновация:",
 
+    "cards": {
+      "card1Enabled": true,
+      "card1Href": "/insurance-carriers/apd/claims-management",
+      "card1Text": "Управление урегулированием",
 
+      "card2Enabled": true,
+      "card2Href": "/collision-repairers/consumer-engagement",
+      "card2Text": "Взаимодействие с клиентами: сервисы",
 
+      "card3Enabled": true,
+      "card3Href": "/collision-repairers/shop-management/employee-pay-tools",
+      "card3Text": "Управление зарплатой в сервисе",
 
-  "company": {
-    "phone": "+7 (999) 123-45-67",
-    "email": "hello@example.com"
+      "card4Enabled": true,
+      "card4Href": "/collision-repairers/repair-solutions/diagnostics",
+      "card4Text": "Диагностика",
+
+      "card5Enabled": true,
+      "card5Href": "/insurance-carriers/casualty",
+      "card5Text": "Травмы и ответственность (Casualty)",
+
+      "card6Enabled": true,
+      "card6Href": "/insurance-carriers/subrogation",
+      "card6Text": "Суброгация"
+    }
+  },
+
+  "footer": {
+    "enabled": true,
+
+    "logoSrc": "/assets/logo.png",
+    "logoAlt": "FixCar logo",
+    "logoHref": "/",
+
+    "col1Title": "РЕШЕНИЯ",
+    "col2Title": "ТЕХНОЛОГИИ",
+    "col3Title": "О КОМПАНИИ",
+
+    "copyrightPrefix": "© ",
+    "copyrightSuffix": " FixCar Все права защищены.",
+
+    "links": {
+      "termsText": "Условия использования",
+      "termsHref": "/policy/terms-of-use",
+
+      "privacyText": "Политика конфиденциальности",
+      "privacyHref": "/policy/privacy",
+
+      "dnsText": "Не продавать и не передавать мою персональную информацию",
+      "dnsHref": "/policy/do-not-sell-or-share-my-personal-information"
+    }
   }
 }

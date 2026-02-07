@@ -16,16 +16,29 @@
     "menu3Href": "/about"
   },
   "footer": {
-    "copyright": "© 2026 FixCar. Все права защищены.",
-    "links": [
-      {
-        "label": "Политика",
-        "href": "/privacy.html"
-      },
-      {
-        "label": "Контакты",
-        "href": "/contacts.html"
-      }
-    ]
+    "enabled": true,
+
+    "logoSrc": "/assets/logo.png",
+    "logoAlt": "FixCar logo",
+    "logoHref": "/",
+
+    "col1Title": "РЕШЕНИЯ",
+    "col2Title": "ТЕХНОЛОГИИ",
+    "col3Title": "О КОМПАНИИ",
+
+    "copyrightPrefix": "© ",
+    "copyrightSuffix": " FixCar Все права защищены.",
+
+    "links": {
+      "termsText": "Условия использования",
+      "termsHref": "/policy/terms-of-use",
+
+      "privacyText": "Политика конфиденциальности",
+      "privacyHref": "/policy/privacy",
+
+      "dnsText": "Не продавать и не передавать мою персональную информацию",
+      "dnsHref": "/policy/do-not-sell-or-share-my-personal-information"
+    }
   }
+
 }

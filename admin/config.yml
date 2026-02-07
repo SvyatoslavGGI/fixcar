@@ -39,14 +39,33 @@ collections:
             name: "footer"
             widget: "object"
             fields:
-              - { label: "Копирайт", name: "copyright", widget: "string" }
+              - { label: "Показывать футер", name: "enabled", widget: "boolean", default: true }
 
-              - label: "Ссылки футера"
-                name: "links"
+              - { label: "Логотип", name: "logoSrc", widget: "image" }
+              - { label: "Alt логотипа", name: "logoAlt", widget: "string", default: "FixCar logo" }
+              - { label: "Ссылка логотипа", name: "logoHref", widget: "string", default: "/" }
+
+              - label: "Колонки футера"
+                name: "columns"
                 widget: "list"
                 fields:
-                  - { label: "Текст", name: "label", widget: "string" }
+                  - { label: "Заголовок колонки", name: "title", widget: "string" }
+                  - label: "Ссылки"
+                    name: "links"
+                    widget: "list"
+                    fields:
+                      - { label: "Текст", name: "text", widget: "string" }
+                      - { label: "Ссылка", name: "href", widget: "string" }
+
+              - { label: "Текст копирайта", name: "copyright", widget: "string" }
+
+              - label: "Юридические ссылки"
+                name: "legal"
+                widget: "list"
+                fields:
+                  - { label: "Текст", name: "text", widget: "string" }
                   - { label: "Ссылка", name: "href", widget: "string" }
+
                   
   - name: "pages"
     label: "Страницы"
@@ -177,7 +196,7 @@ collections:
               - { label: "Карточка 3 — alt", name: "card3ImgAlt", widget: "string" }
               - { label: "Карточка 3 — заголовок", name: "card3Title", widget: "string" }
               - { label: "Карточка 3 — текст", name: "card3Text", widget: "text" }
-              
+
           - label: "Блок: Партнёры (Marquee)"
             name: "marquee"
             widget: "object"
@@ -201,6 +220,47 @@ collections:
               - { label: "Лого 5 — URL", name: "logo5Src", widget: "string" }
               - { label: "Лого 5 — Alt", name: "logo5Alt", widget: "string", default: "" }
 
+          - label: "Блок: Последние решения"
+            name: "latestSolutions"
+            widget: "object"
+            fields:
+              - { label: "Показывать блок", name: "enabled", widget: "boolean", default: true }
+
+              - { label: "Картинка — URL", name: "imageSrc", widget: "string" }
+              - { label: "Картинка — Alt", name: "imageAlt", widget: "string", default: "" }
+
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Текст", name: "text", widget: "text" }
+
+              - { label: "Подпись над карточками", name: "badge", widget: "string", default: "Самая свежая инновация:" }
+
+              - label: "Карточки"
+                name: "cards"
+                widget: "object"
+                fields:
+                  - { label: "Карточка 1 — показывать", name: "card1Enabled", widget: "boolean", default: true }
+                  - { label: "Карточка 1 — ссылка", name: "card1Href", widget: "string" }
+                  - { label: "Карточка 1 — текст", name: "card1Text", widget: "string" }
+
+                  - { label: "Карточка 2 — показывать", name: "card2Enabled", widget: "boolean", default: true }
+                  - { label: "Карточка 2 — ссылка", name: "card2Href", widget: "string" }
+                  - { label: "Карточка 2 — текст", name: "card2Text", widget: "string" }
+
+                  - { label: "Карточка 3 — показывать", name: "card3Enabled", widget: "boolean", default: true }
+                  - { label: "Карточка 3 — ссылка", name: "card3Href", widget: "string" }
+                  - { label: "Карточка 3 — текст", name: "card3Text", widget: "string" }
+
+                  - { label: "Карточка 4 — показывать", name: "card4Enabled", widget: "boolean", default: true }
+                  - { label: "Карточка 4 — ссылка", name: "card4Href", widget: "string" }
+                  - { label: "Карточка 4 — текст", name: "card4Text", widget: "string" }
+
+                  - { label: "Карточка 5 — показывать", name: "card5Enabled", widget: "boolean", default: true }
+                  - { label: "Карточка 5 — ссылка", name: "card5Href", widget: "string" }
+                  - { label: "Карточка 5 — текст", name: "card5Text", widget: "string" }
+
+                  - { label: "Карточка 6 — показывать", name: "card6Enabled", widget: "boolean", default: true }
+                  - { label: "Карточка 6 — ссылка", name: "card6Href", widget: "string" }
+                  - { label: "Карточка 6 — текст", name: "card6Text", widget: "string" }
 
       - file: "content/about.json"
         label: "О компании"
