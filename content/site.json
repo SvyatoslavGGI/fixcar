@@ -1,33 +1,31 @@
 {
-
   "header": {
-    "logoSrc": "logo.png",
-    "logoAlt": "FixCar logo",
-    "logoHref": "/",
-
-    "menu1Text": "Решения",
-    "menu1Href": "/",
-
     "menu2Text": "Технологии",
-    "menu2Href": "/",
-
     "menu3Text": "О компании",
-    "menu3Href": "/about",
-
-    "searchAction": "/search",
     "searchPlaceholder": "Поиск",
     "searchExpandedPlaceholder": "Поиск по cccis.com",
-
+    "logoHref": "/",
+    "logoSrc": "logo.png",
+    "ctaHref": "/contact",
+    "menu1Href": "/solution",
     "ctaText": "Связаться с нами",
-    "ctaHref": "/contact"
+    "menu2Href": "/",
+    "searchAction": "/search",
+    "logoAlt": "FixCar logo",
+    "menu1Text": "Решения",
+    "menu3Href": "/about"
   },
-
-
   "footer": {
     "copyright": "© 2026 FixCar. Все права защищены.",
     "links": [
-      { "label": "Политика", "href": "/privacy.html" },
-      { "label": "Контакты", "href": "/contacts.html" }
+      {
+        "label": "Политика",
+        "href": "/privacy.html"
+      },
+      {
+        "label": "Контакты",
+        "href": "/contacts.html"
+      }
     ]
   }
 }
