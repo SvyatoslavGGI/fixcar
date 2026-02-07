@@ -516,6 +516,9 @@
                     color: var(--navbar--blue);
                     text-decoration: none;
                 }
+                .w-nav-overlay .nav_menu_link a{
+                    color: var(--text-secondary);
+                }
             </style>
         </div>
         <div class="nav_fixed">
@@ -524,7 +527,9 @@
                     class="skip-to-main" href="#">Перейти к основному содержимому</a>
                 <div class="padding-global">
                     <div class="nav_container"><a aria-current="page" class="nav_brand w-nav-brand w--current" data-cms-href="header.logoHref"
-                            href="/"><img alt="FixCar logo" class="nav_logo" loading="lazy" data-cms-src="header.logoSrc" data-cms-alt="header.logoAlt" src="logo.png" /></a>
+                            href="/">
+                            <img alt="FixCar logo" class="nav_logo" loading="lazy" data-cms-src="header.logoSrc" data-cms-alt="header.logoAlt" src="/assets/logo.png" />
+                        </a>
                         <nav class="nav_menu w-nav-menu" role="navigation">
                             <div class="nav_menu_wrapper">
                                 <form action="/search" class="search-wrapper is-nav w-form"><input

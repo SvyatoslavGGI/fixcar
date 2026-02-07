@@ -1,10 +1,10 @@
 {
   "header": {
-    "logoSrc": "logo.png",
+    "logoSrc": "/assets/logo.png",
     "logoAlt": "FixCar logo",
     "logoHref": "/",
 
-    "menu1Text": "Решения test",
+    "menu1Text": "Решения",
     "menu1Href": "/solutions",
 
     "menu2Text": "Технологии",
