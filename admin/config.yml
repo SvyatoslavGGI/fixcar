@@ -177,6 +177,7 @@ collections:
               - { label: "Карточка 3 — alt", name: "card3ImgAlt", widget: "string" }
               - { label: "Карточка 3 — заголовок", name: "card3Title", widget: "string" }
               - { label: "Карточка 3 — текст", name: "card3Text", widget: "text" }
+              
           - label: "Блок: Партнёры (Marquee)"
             name: "marquee"
             widget: "object"
@@ -185,18 +186,21 @@ collections:
               - { label: "Заголовок", name: "title", widget: "string" }
               - { label: "Текст", name: "text", widget: "text" }
 
-              - label: "Логотипы партнёров"
-                name: "items"
-                widget: "list"
-                fields:
-                  - { label: "Картинка (URL)", name: "src", widget: "string" }
+              - { label: "Лого 1 — URL", name: "logo1Src", widget: "string" }
+              - { label: "Лого 1 — Alt", name: "logo1Alt", widget: "string", default: "" }
 
-                    - label: "Контакты"
-                      name: "company"
-                      widget: "object"
-                      fields:
-                        - { label: "Телефон", name: "phone", widget: "string", required: false }
-                        - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Лого 2 — URL", name: "logo2Src", widget: "string" }
+              - { label: "Лого 2 — Alt", name: "logo2Alt", widget: "string", default: "" }
+
+              - { label: "Лого 3 — URL", name: "logo3Src", widget: "string" }
+              - { label: "Лого 3 — Alt", name: "logo3Alt", widget: "string", default: "" }
+
+              - { label: "Лого 4 — URL", name: "logo4Src", widget: "string" }
+              - { label: "Лого 4 — Alt", name: "logo4Alt", widget: "string", default: "" }
+
+              - { label: "Лого 5 — URL", name: "logo5Src", widget: "string" }
+              - { label: "Лого 5 — Alt", name: "logo5Alt", widget: "string", default: "" }
+
 
       - file: "content/about.json"
         label: "О компании"

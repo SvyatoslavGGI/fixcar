@@ -133,13 +133,21 @@
     "enabled": true,
     "title": "Создаём ценность вместе с нашими надёжными партнёрами",
     "text": "Наша партнёрская сеть двигает инновации благодаря бесшовным интеграциям, безопасному обмену данными и отраслевой экспертизе. Вместе мы формируем будущее автоурегулирования и ремонта. Вместе мы делаем так, чтобы всё просто работало.",
-    "items": [
-      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68c9635004689570e259ca43_Partner%20tile%20updates.png" },
-      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68f93ec953a1a111887909a5_5Aces%20Solutions.png" },
-      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68f932c9b25f49f69214d3e1_Adassafe%20logo.jpg" },
-      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/678d7032cba5a51ee59bab89_agero.png" },
-      { "src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68b8635697025169fbb1d734_9.2.25%20airpro.jpeg" }
-    ]
+
+    "logo1Src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68c9635004689570e259ca43_Partner%20tile%20updates.png",
+    "logo1Alt": "3M",
+
+    "logo2Src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68f93ec953a1a111887909a5_5Aces%20Solutions.png",
+    "logo2Alt": "5 Aces Solutions",
+
+    "logo3Src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68f932c9b25f49f69214d3e1_Adassafe%20logo.jpg",
+    "logo3Alt": "ADAS Safe",
+
+    "logo4Src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/678d7032cba5a51ee59bab89_agero.png",
+    "logo4Alt": "Agero",
+
+    "logo5Src": "https://cdn.prod.website-files.com/678198e0d26ae544e7cce3bf/68b8635697025169fbb1d734_9.2.25%20airpro.jpeg",
+    "logo5Alt": "AirPro"
   },
 
 
